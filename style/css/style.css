@@ -2,7 +2,6 @@
 * {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    
 }
 
 /************************
@@ -124,6 +123,37 @@
         list-style-type: none
     }
 
+    .textoImgNosotros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 25px 10% 25px 10%;
+    }
+    
+    .textoImgNosotros p {
+        padding: 10px 50px 10px 50px;
+        width: 50%;
+        text-align: justify;
+    }
+
+    .textoImgNosotros img {
+        width: 60vh;
+    }
+
+    .listaNosotros {
+        padding: 25px 0 25px 0;
+        padding-bottom: 20px;
+    }
+    .listaNosotros div li {
+        border: none;
+    }
+    .texto2Nosotros {
+        padding: 25px 20% 25px 20%;
+    }
+    
 }
 
 /************************
@@ -140,7 +170,7 @@
         "pie pie"
         ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: auto 5% 2.5fr 1fr;
+        grid-template-rows: auto auto 2.5fr auto;
 
         grid-column-gap: 0;
         grid-row-gap: 0;
@@ -173,6 +203,22 @@
 
     .imgLogo {
         width: 50%;
+    }
+
+    .textoImgNosotros {
+        padding: 15px 5% 15px 5%;
+        flex-direction: column-reverse;
+    }
+    .textoImgNosotros img {
+        padding: 10px 0 10px 0;
+    }
+    .textoImgNosotros p {
+        padding: 10px 25px 10px 25px;
+        width: 80%;
+    }
+    .texto2Nosotros {
+        padding: 15px 10% 15px 10%;
+        text-align: justify;
     }
 }
 
@@ -212,5 +258,8 @@
     }
     .imgLogo {
         width: 70%;
+    }
+    .textoImgNosotros p {
+        padding: 10px 5% 10px 5%;
     }
 }
